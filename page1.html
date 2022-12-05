@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function passvalues(){
+            var txtNAME=document.getElementById("iname").value;
+            var txtAGE=document.getElementById("iage").value;
+            var txtEMAIL=document.getElementById("imail").value;
+            var txtCODE=document.getElementById("icode").value;
+            var txtDATE=document.getElementById("idate").value;
+            localStorage.setItem("INAMETXT",txtNAME)
+            localStorage.setItem("ICODETXT",txtAGE)
+            localStorage.setItem("IEMAILTXT",txtEMAIL)
+            localStorage.setItem("ICODETXT",txtCODE)
+            localStorage.setItem("IDATETXT",txtDATE)
+
+        }
+    </script>
+</head>
+<body>
+<table>
+    <center>
+    <h1> Form </h1>
+   <hr>
+    <form    action="page2.html"  autocomplete="off" >
+    Student Name:
+    <input type="text" placeholder="Name" id="iname" />
+    <br/> <br/>
+    Student Age:
+    <input type="number"  placeholder="age" id="iage" min="10" max="50"/>
+    <br/> <br/>
+    Email ID:
+    <input type="email" placeholder="email" id="imail" />
+    <br/> <br/>
+    Pin code:
+    <input type="text"  placeholder="pin code" id="icode"  />
+    <br/> <br/>
+    Join Date:
+    <input type="date" placeholder="join date" id="idate"  />
+    <br/> <br/>
+    <input type="submit" value="View profile" onclick="passvalues()"/>
+    </form><br/>
+    </center>
+</table>
+</body>
+</html>

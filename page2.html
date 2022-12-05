@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+    <h1>Profile</h1>
+    <h3>Name: <span id="result-iname"></span></h3>
+    <h3>Age: <span id="result-iage"></span> </h3>
+    <h3>Email: <span id="result-imail"></span></h3>
+    <h3>Pin Code : <span id="result-icode"></span></h3>
+    <h3>JoinDate : <span id="result-idate"></span></h3>
+    <script>
+        document.getElementById("result-iname").innerHTML =localStorage.getItem("INAMETXT");    
+        document.getElementById("result-iage").innerHTML =localStorage.getItem("ICODETXT");  
+        document.getElementById("result-imail").innerHTML =localStorage.getItem("IEMAILTXT");  
+        document.getElementById("result-icode").innerHTML =localStorage.getItem("ICODETXT");  
+        document.getElementById("result-idate").innerHTML =localStorage.getItem("IDATETXT");  
+    </script>  
+    </center>
+</body>
+</html>
